@@ -1,0 +1,37 @@
+[
+  {
+    "number": 1,
+    "lastDrawn": 6,
+    "drawFrequency": 43
+  },
+  {
+    "number": 2,
+    "lastDrawn": 4,
+    "drawFrequency": 68
+  },
+  {
+    "number": 3,
+    "lastDrawn": 7,
+    "drawFrequency": 88
+  },
+  {
+    "number": 4,
+    "lastDrawn": 4,
+    "drawFrequency": 15
+  },
+  {
+    "number": 5,
+    "lastDrawn": 8,
+    "drawFrequency": 11
+  },
+  {
+    "number": 6,
+    "lastDrawn": 8,
+    "drawFrequency": 61
+  },
+  {
+    "number": 7,
+    "lastDrawn": 6,
+    "drawFrequency": 19
+  }
+]

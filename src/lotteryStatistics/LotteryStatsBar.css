@@ -1,0 +1,50 @@
+.bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.bar-last-drawn {
+    flex: 1;
+    margin-right: -5px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.last-drawn-percent {
+    background-color: #8FA9D3;
+    color: white;
+    padding-right: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.bar-number {
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    background-color: #25154E;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.bar-draw-frequency {
+    flex: 1;
+    margin-left: -5px;
+}
+
+.draw-frequency-percent {
+    background-color: #382a4e;
+    color: white;
+    text-align: left;
+    padding: 0 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

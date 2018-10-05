@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.label, .sort {
+    width: 50%;
+    display: flex;
+}
+
+.label {
+    padding-left: 40px;
+}
+
+.sort {
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.draw-frequency, .last-drawn {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.draw-frequency-ball {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #25154E;
+}
+
+.last-drawn-ball {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #8FA9D3;
+}
+
+.stats-content {
+    margin-top: 40px;
+}
