@@ -17,9 +17,9 @@ class LotteryStats extends Component {
   renderStatsBars = () => {
     const { sortCondition } = this.state;
 
-    // sort lottery set based on user selection
     let lotterySetSorted = [];
 
+    // sort lottery set based on user selection
     if (sortCondition === 'numerical') {
       lotterySetSorted = orderBy(this.state.lotterySet, ['number'], ['asc'])
     } else if (sortCondition === 'frequency') {
@@ -57,12 +57,12 @@ class LotteryStats extends Component {
     }, []);
 
     // calculate the max draw frequency
-    const maxdrawFrequency = Math.max(...drawFrequencyArray);
-    const maxlastDrawn = Math.max(...lastDrawArray);
+    const maxDrawFrequency = Math.max(...drawFrequencyArray);
+    const maxLastDrawn = Math.max(...lastDrawArray);
 
     this.setState({
-      maxDrawFrequency: maxdrawFrequency,
-      maxLastDrawn: maxlastDrawn
+      maxDrawFrequency,
+      maxLastDrawn
     })
   }
 
