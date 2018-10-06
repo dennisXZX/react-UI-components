@@ -29,9 +29,18 @@ class LotteryStats extends Component {
     })
   }
 
-  sortStats = (event) => {
-    const sortCondition = event.target.value;
+  onSortStats = (event) => {
+    const sortCondition = event.target.value
 
+    const lotterySetSorted = this.sortStats(sortCondition)
+
+    this.setState({
+      sortCondition,
+      lotterySetSorted
+    });
+  }
+
+  sortStats = (sortCondition) => {
     let lotterySetSorted = [];
 
     // sort lottery set based on user selection
@@ -43,17 +52,14 @@ class LotteryStats extends Component {
       lotterySetSorted = orderBy(this.state.lotterySetSorted, ['lastDrawn'], ['desc'])
     }
 
-    this.setState({
-      sortCondition,
-      lotterySetSorted
-    });
+    return lotterySetSorted;
   }
 
   render () {
     return (
       <div className="container">
         <LotteryStatsHeader
-          sortStats={this.sortStats}
+          onSortStats={this.onSortStats}
         />
 
         {this.renderStatsBars()}

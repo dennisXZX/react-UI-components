@@ -22,7 +22,7 @@ class LotteryStatsHeader extends Component {
         <div className="sort">
           <span>Sort by</span>
           <select
-            onChange={this.props.sortStats}>
+            onChange={this.props.onSortStats}>
             <option
               value="numerical">
               Numerical
