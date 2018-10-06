@@ -5,7 +5,7 @@ import orderBy from "lodash/orderBy";
 
 import lotterySet from './data'
 
-class LotteryStats extends Component {
+class LotteryStatsDemo extends Component {
 
   state = {
     sortCondition: 'numerical',
@@ -92,4 +92,4 @@ class LotteryStats extends Component {
   }
 }
 
-export default LotteryStats
+export default LotteryStatsDemo

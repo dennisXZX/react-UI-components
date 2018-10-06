@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-// import React components
-import LotteryStats from './lotteryStatistics/LotteryStats'
+// import LotteryStatsDemo from './LotteryStatistics/LotteryStatsDemo'
+import ProgressBarDemo from './ProgressBar/ProgressBarDemo'
 
 class App extends Component {
   render() {
@@ -11,7 +11,8 @@ class App extends Component {
         <h2>Uncomment the React component you want to see in source code</h2>
 
         <div className="demo-area">
-          <LotteryStats />
+          {/*<LotteryStatsDemo />*/}
+          <ProgressBarDemo />
         </div>
       </div>
     );
