@@ -5,7 +5,7 @@ class LotteryStatsHeader extends Component {
   render () {
     return (
       <div className="header">
-        {/* diagram legends */}
+        {/* diagram legend */}
         <div className="label">
           <div className="draw-frequency">
             <span className="draw-frequency-ball"></span>
@@ -22,7 +22,7 @@ class LotteryStatsHeader extends Component {
         <div className="sort">
           <span>Sort by</span>
           <select
-            onChange={this.sortStats}>
+            onChange={this.props.sortStats}>
             <option
               value="numerical">
               Numerical

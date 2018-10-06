@@ -1,20 +1,34 @@
 import React, { Component } from 'react'
 import LotteryStatsHeader from './LotteryStatsHeader'
 import LotteryStatsBar from './LotteryStatsBar'
+import orderBy from "lodash/orderBy";
 
-import data from './data'
+import lotterySet from './data'
 
 class LotteryStats extends Component {
 
   state = {
-    lotterySet: data,
+    lotterySet: lotterySet,
     sortCondition: 'numerical',
     maxLastDrawn: 0,
     maxDrawFrequency: 0
   }
 
   renderStatsBars = () => {
-    return this.state.lotterySet.map(data => {
+    const { sortCondition } = this.state;
+
+    // sort lottery set based on user selection
+    let lotterySetSorted = [];
+
+    if (sortCondition === 'numerical') {
+      lotterySetSorted = orderBy(this.state.lotterySet, ['number'], ['asc'])
+    } else if (sortCondition === 'frequency') {
+      lotterySetSorted = orderBy(this.state.lotterySet, ['drawFrequency'], ['desc'])
+    } else {
+      lotterySetSorted = orderBy(this.state.lotterySet, ['lastDrawn'], ['desc'])
+    }
+
+    return lotterySetSorted.map(data => {
       return (
         <LotteryStatsBar
           key={data.number}
@@ -56,7 +70,9 @@ class LotteryStats extends Component {
 
     return (
       <div className="container">
-        <LotteryStatsHeader />
+        <LotteryStatsHeader
+          sortStats={this.sortStats}
+        />
 
         {this.renderStatsBars()}
       </div>
