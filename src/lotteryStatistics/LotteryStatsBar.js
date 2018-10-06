@@ -7,12 +7,12 @@ class LotteryStatsBar extends Component {
       number,
       lastDrawn,
       drawFrequency,
-      maxlastDrawn,
-      maxdrawFrequency
+      maxLastDrawn,
+      maxDrawFrequency
     } = this.props
 
-    const drawFrequencyPercent = Math.floor((90 * drawFrequency) / maxdrawFrequency);
-    const lastDrawnPercent = Math.floor((70 * lastDrawn) / maxlastDrawn);
+    const drawFrequencyPercent = Math.floor((90 * drawFrequency) / maxDrawFrequency);
+    const lastDrawnPercent = Math.floor((70 * lastDrawn) / maxLastDrawn);
 
     return (
       <div className="bar-container">

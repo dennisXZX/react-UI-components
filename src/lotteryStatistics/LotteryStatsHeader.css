@@ -1,6 +1,7 @@
 .header {
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
 }
 
 .label, .sort {
@@ -39,8 +40,4 @@
     border-radius: 50%;
     margin-right: 10px;
     background-color: #8FA9D3;
-}
-
-.stats-content {
-    margin-top: 40px;
 }
