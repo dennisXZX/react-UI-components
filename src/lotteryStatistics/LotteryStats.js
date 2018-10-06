@@ -11,19 +11,24 @@ class LotteryStats extends Component {
     sortCondition: 'numerical',
     maxLastDrawn: 0,
     maxDrawFrequency: 0,
-    lotterySetSorted: lotterySet,
+    lotterySetSorted: lotterySet
   }
 
   renderStatsBars = () => {
-    return this.state.lotterySetSorted.map(data => {
+    const {
+      maxDrawFrequency,
+      maxLastDrawn
+    } = this.state
+
+    return this.state.lotterySetSorted.map((data, i) => {
       return (
         <LotteryStatsBar
-          key={data.number}
+          key={i}
           number={data.number}
           lastDrawn={data.lastDrawn}
           drawFrequency={data.drawFrequency}
-          maxLastDrawn={this.state.maxLastDrawn}
-          maxDrawFrequency={this.state.maxDrawFrequency}
+          maxLastDrawn={maxLastDrawn}
+          maxDrawFrequency={maxDrawFrequency}
         />
       )
     })
@@ -31,7 +36,6 @@ class LotteryStats extends Component {
 
   onSortStats = (event) => {
     const sortCondition = event.target.value
-
     const lotterySetSorted = this.sortStats(sortCondition)
 
     this.setState({
