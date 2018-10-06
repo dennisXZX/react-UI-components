@@ -18,6 +18,11 @@
     padding-right: 40px;
 }
 
+.sort span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .draw-frequency, .last-drawn {
     display: flex;
     align-items: center;

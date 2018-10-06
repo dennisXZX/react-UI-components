@@ -20,6 +20,7 @@ class LotteryStatsHeader extends Component {
 
         {/* sorting dropdown */}
         <div className="sort">
+          <span>Sort by</span>
           <select
             onChange={this.sortStats}>
             <option
