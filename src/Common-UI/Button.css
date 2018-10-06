@@ -5,6 +5,7 @@
     border-radius: 5px;
     outline: none;
     transition: all 400ms;
+    cursor: pointer;
 }
 
 .button:hover {

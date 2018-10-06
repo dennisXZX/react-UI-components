@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 // import LotteryStatsDemo from './LotteryStatistics/LotteryStatsDemo'
-import ProgressBarDemo from './ProgressBar/ProgressBarDemo'
+// import ProgressBarDemo from './ProgressBarDemo/ProgressBarDemo'
+import NavbarDemo from './NavbarDemo/NavbarDemo'
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
 
         <div className="demo-area">
           {/*<LotteryStatsDemo />*/}
-          <ProgressBarDemo />
+          {/*<ProgressBarDemo />*/}
+          <NavbarDemo />
         </div>
       </div>
     );
