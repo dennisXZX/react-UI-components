@@ -16,15 +16,20 @@ class LotteryStatsBar extends Component {
 
     return (
       <div className="bar-container">
+        {/* last drawn */}
         <div className="bar-last-drawn">
           <div className="last-drawn-percent" style={{ width : lastDrawnPercent + '%' }}>
             {lastDrawn + ' weeks'}
           </div>
         </div>
+
+        {/* ball number */}
         <div
           className="bar-number">
           {number}
         </div>
+
+        {/* draw frequency */}
         <div className="bar-draw-frequency">
           <div className="draw-frequency-percent" style={{ width : drawFrequencyPercent + '%' }}>
             {drawFrequency + ' times'}

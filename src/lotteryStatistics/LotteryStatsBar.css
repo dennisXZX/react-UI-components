@@ -20,6 +20,7 @@
     padding-right: 15px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    transition: width 400ms ease-in-out;
 }
 
 .bar-number {
@@ -47,4 +48,5 @@
     padding: 0 15px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    transition: width 400ms ease-in-out;
 }
