@@ -1,33 +1,33 @@
 [
   {
     "number": 1,
-    "lastDrawn": 6,
-    "drawFrequency": 43
+    "lastDrawn": 0,
+    "drawFrequency": 100
   },
   {
     "number": 2,
-    "lastDrawn": 4,
-    "drawFrequency": 68
+    "lastDrawn": 35,
+    "drawFrequency": 23
   },
   {
     "number": 3,
     "lastDrawn": 7,
-    "drawFrequency": 88
+    "drawFrequency": 18
   },
   {
     "number": 4,
-    "lastDrawn": 4,
+    "lastDrawn": 1,
     "drawFrequency": 15
   },
   {
     "number": 5,
     "lastDrawn": 8,
-    "drawFrequency": 11
+    "drawFrequency": 1
   },
   {
     "number": 6,
     "lastDrawn": 8,
-    "drawFrequency": 61
+    "drawFrequency": 25
   },
   {
     "number": 7,

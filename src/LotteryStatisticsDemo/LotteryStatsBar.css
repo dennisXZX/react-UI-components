@@ -15,12 +15,17 @@
 }
 
 .last-drawn-percent {
-    background-color: #8FA9D3;
-    color: white;
     padding-right: 15px;
+}
+
+.last-drawn-percent-bg {
+    height: 21px;
+    line-height: 21px;
+    color: white;
+    transition: width 300ms ease-in-out;
+    background-color: #8FA9D3;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    transition: width 300ms ease-in-out;
 }
 
 .bar-number {
@@ -42,10 +47,15 @@
 }
 
 .draw-frequency-percent {
+    padding-left: 15px;
+}
+
+.draw-frequency-percent-bg {
+    height: 21px;
+    line-height: 21px;
     background-color: #382a4e;
     color: white;
     text-align: left;
-    padding: 0 15px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: width 300ms ease-in-out;
