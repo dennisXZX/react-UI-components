@@ -29,8 +29,8 @@ class LotteryStatsBar extends Component {
       <div className="bar-container">
         <div className="bar-last-drawn">
           <div className={lastDrawClass}
-               style={{ width : (lastDrawn > 1 ? lastDrawnPercent : '10') + '%' }}>
-            {lastDrawn + (lastDrawn > 1 ? ' weeks' : ' week')}
+               style={{ width : lastDrawnPercent + '%' }}>
+            {lastDrawn}
           </div>
         </div>
 
@@ -41,8 +41,8 @@ class LotteryStatsBar extends Component {
 
         <div className="bar-draw-frequency">
           <div className={drawFrequencyClass}
-               style={{ width : (drawFrequency > 1 ? drawFrequencyPercent : '10') + '%' }}>
-            {drawFrequency + (drawFrequency > 1 ? ' times' : ' time')}
+               style={{ width : drawFrequencyPercent + '%' }}>
+            {drawFrequency}
           </div>
         </div>
       </div>

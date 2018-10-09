@@ -16,7 +16,7 @@
   },
   {
     "number": 4,
-    "lastDrawn": 1,
+    "lastDrawn": 4,
     "drawFrequency": 15
   },
   {
@@ -27,7 +27,7 @@
   {
     "number": 6,
     "lastDrawn": 8,
-    "drawFrequency": 25
+    "drawFrequency": 0
   },
   {
     "number": 7,
