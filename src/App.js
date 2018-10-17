@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 
-// import LotteryStatsDemo from './LotteryStatisticsDemo/LotteryStatsDemo'
-// import ProgressBarDemo from './ProgressBarDemo/ProgressBarDemo'
-// import NavbarDemo from './NavbarDemo/NavbarDemo'
-// import CurrencyConverterDemo from './CurrencyConverterDemo/CurrencyConverterDemo'
-import ClockDemo from './ClockDemo/ClockDemo'
+// import ClockDemo from './Demos/ClockDemo/ClockDemo'
+// import CurrencyConverterDemo from './Demos/CurrencyConverterDemo/CurrencyConverterDemo'
+// import LotteryStatsDemo from './Demos/LotteryStatisticsDemo/LotteryStatsDemo'
+// import ProgressBarDemo from './Demos/ProgressBarDemo/ProgressBarDemo'
+// import NavbarDemo from './Demos/NavbarDemo/NavbarDemo'
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
         <h2>Uncomment the React component you want to see in source code</h2>
 
         <div className="demo-area">
-          <ClockDemo />
+          {/*<ClockDemo />*/}
           {/*<CurrencyConverterDemo />*/}
           {/*<LotteryStatsDemo />*/}
           {/*<ProgressBarDemo />*/}

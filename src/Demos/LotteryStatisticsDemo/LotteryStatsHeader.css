@@ -31,7 +31,7 @@
 
 .draw-frequency-ball {
     display: inline-block;
-    width: 20px;
+    width: 28px;
     height: 20px;
     border-radius: 50%;
     margin-right: 10px;
@@ -40,7 +40,7 @@
 
 .last-drawn-ball {
     display: inline-block;
-    width: 20px;
+    width: 28px;
     height: 20px;
     border-radius: 50%;
     margin-right: 10px;

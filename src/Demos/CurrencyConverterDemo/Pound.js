@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pound = ({ amount }) => {
   return (
-    <p>Pound: {amount * 0.76}</p>
+    <p>Pound: £{Math.round(amount * 0.76 * 100) / 100}</p>
   )
 }
 

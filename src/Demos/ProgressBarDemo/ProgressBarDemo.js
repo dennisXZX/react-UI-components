@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Button from '../Common-UI/Button'
-import ProgressBar from '../Common-UI/ProgressBar'
+import Button from '../../Common-UI/Button'
+import ProgressBar from '../../Common-UI/ProgressBar'
 import './ProgressBarDemo.css'
 
 class ProgressBarDemo extends Component {
