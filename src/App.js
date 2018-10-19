@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import ReduxDemo from './Demos/ReduxDemo/ReduxDemo'
 // import ClockDemo from './Demos/ClockDemo/ClockDemo'
 // import CurrencyConverterDemo from './Demos/CurrencyConverterDemo/CurrencyConverterDemo'
 // import LotteryStatsDemo from './Demos/LotteryStatisticsDemo/LotteryStatsDemo'
@@ -14,6 +15,7 @@ class App extends Component {
         <h2>Uncomment the React component you want to see in source code</h2>
 
         <div className="demo-area">
+          <ReduxDemo />
           {/*<ClockDemo />*/}
           {/*<CurrencyConverterDemo />*/}
           {/*<LotteryStatsDemo />*/}
