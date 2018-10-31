@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import './App.css'
 
 /* example from old to news */
@@ -8,7 +8,9 @@ import './App.css'
 // import CurrencyConverterDemo from './Demos/CurrencyConverterDemo/CurrencyConverterDemo'
 // import ClockDemo from './Demos/ClockDemo/ClockDemo'
 // import ReduxCounterDemo from './Demos/ReduxCounterDemo/ReduxCounterDemo'
-import ToggleRenderPropsDemo from './Demos/ToggleDemo/ToggleRenderPropsDemo'
+import Toggle from './Demos/ToggleDemo/Toggle'
+// import Portal from './Demos/PortalDemo/Portal'
+import Modal from './Demos/ModalDemo/Modal'
 
 class App extends Component {
   render () {
@@ -17,14 +19,29 @@ class App extends Component {
         <h2>Uncomment the React component you want to see in source code</h2>
 
         <div className="demo-area">
-          <ToggleRenderPropsDemo>
+          <Toggle>
             {({ on, toggle }) => (
-              <>
-                {on && <h1>Show me</h1>}
-                <button onClick={toggle}>Show / Hide</button>
-              </>
+              <Fragment>
+                <button onClick={toggle}>Login</button>
+                <Modal on={on} toggle={toggle}>
+                  <h1>Still in modal</h1>
+                </Modal>
+              </Fragment>
             )}
-          </ToggleRenderPropsDemo>
+          </Toggle>
+
+          {/*<Portal>*/}
+          {/*<h1>Hello Portal!</h1>*/}
+          {/*</Portal>*/}
+
+          {/*<Toggle>*/}
+            {/*{({ on, toggle }) => (*/}
+              {/*<Fragment>*/}
+                {/*{on && <h1>Show me</h1>}*/}
+                {/*<button onClick={toggle}>Show / Hide</button>*/}
+              {/*</Fragment>*/}
+            {/*)}*/}
+          {/*</Toggle>*/}
 
           {/*<ReduxCounterDemo />*/}
 
