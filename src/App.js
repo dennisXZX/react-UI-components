@@ -19,17 +19,23 @@ class App extends Component {
         <div className="demo-area">
           <ToggleRenderPropsDemo>
             {({ on, toggle }) => (
-              <div>
+              <>
                 {on && <h1>Show me</h1>}
                 <button onClick={toggle}>Show / Hide</button>
-              </div>
+              </>
             )}
           </ToggleRenderPropsDemo>
+
           {/*<ReduxCounterDemo />*/}
+
           {/*<ClockDemo />*/}
+
           {/*<LotteryStatsDemo />*/}
+
           {/*<CurrencyConverterDemo />*/}
+
           {/*<ProgressBarDemo />*/}
+
           {/*<NavbarDemo />*/}
         </div>
       </div>

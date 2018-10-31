@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class ToggleDemo extends Component {
+class ToggleRenderPropsDemo extends Component {
   state = {
     on: false
   }
@@ -21,4 +21,4 @@ class ToggleDemo extends Component {
   }
 }
 
-export default ToggleDemo
+export default ToggleRenderPropsDemo
