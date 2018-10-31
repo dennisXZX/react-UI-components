@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { createStore } from 'redux'
 
-class ReduxDemo extends Component {
+class ReduxCounterDemo extends Component {
   render () {
     return (
       <div>
@@ -68,4 +68,4 @@ class ReduxDemo extends Component {
   }
 }
 
-export default ReduxDemo
+export default ReduxCounterDemo
