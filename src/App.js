@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
 
-/* example from old to news */
 // import NavbarDemo from './Demos/NavbarDemo/NavbarDemo'
 // import ProgressBarDemo from './Demos/ProgressBarDemo/ProgressBarDemo'
 // import LotteryStatsDemo from './Demos/LotteryStatisticsDemo/LotteryStatsDemo'
