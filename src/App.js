@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import './App.css'
 
 /* example from old to news */
@@ -21,12 +21,12 @@ class App extends Component {
         <div className="demo-area">
           <Toggle>
             {({ on, toggle }) => (
-              <Fragment>
+              <>
                 <button onClick={toggle}>Login</button>
                 <Modal on={on} toggle={toggle}>
                   <h1>Still in modal</h1>
                 </Modal>
-              </Fragment>
+              </>
             )}
           </Toggle>
 
