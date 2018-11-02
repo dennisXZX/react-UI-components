@@ -11,7 +11,7 @@ class SideNavbar extends Component {
     return (
       <ul id="navbar" className={visible ? 'slideIn' : 'slideOut'}>
         {navItems.map(navItem => {
-          return <li><a>&gt; {navItem.name}</a></li>
+          return <li>&gt; {navItem.name}</li>
         })}
       </ul>
     )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, ProgressBar } from '../../Common-UI'
+import { Button, ProgressBar } from '../../CommonUI'
 import './ProgressBarDemo.css'
 
 class ProgressBarDemo extends Component {

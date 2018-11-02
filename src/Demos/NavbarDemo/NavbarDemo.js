@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, SideNavbar } from '../../Common-UI'
+import { Button, SideNavbar } from '../../CommonUI'
 
 class NavbarDemo extends Component {
   state = {

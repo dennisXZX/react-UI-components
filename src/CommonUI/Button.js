@@ -4,7 +4,7 @@ import './Button.css'
 class Button extends Component {
   render () {
     const {
-      text,
+      text = "Login",
       onClickHandler
     } = this.props
 

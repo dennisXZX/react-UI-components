@@ -7,9 +7,8 @@ import './App.css'
 // import CurrencyConverterDemo from './Demos/CurrencyConverterDemo/CurrencyConverterDemo'
 // import ClockDemo from './Demos/ClockDemo/ClockDemo'
 // import ReduxCounterDemo from './Demos/ReduxCounterDemo/ReduxCounterDemo'
-import Toggle from './Demos/ToggleDemo/Toggle'
-// import Portal from './Demos/PortalDemo/Portal'
-import Modal from './Demos/ModalDemo/Modal'
+import { Toggle } from './Utilities'
+import { Button, Modal } from './CommonUI'
 
 class App extends Component {
   render () {
@@ -21,17 +20,13 @@ class App extends Component {
           <Toggle>
             {({ on, toggle }) => (
               <>
-                <button onClick={toggle}>Login</button>
+                <Button onClickHandler={toggle}>Login</Button>
                 <Modal on={on} toggle={toggle}>
                   <h1>Still in modal</h1>
                 </Modal>
               </>
             )}
           </Toggle>
-
-          {/*<Portal>*/}
-          {/*<h1>Hello Portal!</h1>*/}
-          {/*</Portal>*/}
 
           {/*<Toggle>*/}
             {/*{({ on, toggle }) => (*/}
