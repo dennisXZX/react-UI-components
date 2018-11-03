@@ -7,8 +7,8 @@ import './App.css'
 // import CurrencyConverterDemo from './Demos/CurrencyConverterDemo/CurrencyConverterDemo'
 // import ClockDemo from './Demos/ClockDemo/ClockDemo'
 // import ReduxCounterDemo from './Demos/ReduxCounterDemo/ReduxCounterDemo'
-import { Toggle } from './Utilities'
-import { Button, Modal } from './CommonUI'
+// import { Toggle } from './Utilities'
+// import { Button, Modal } from './CommonUI'
 
 class App extends Component {
   render () {
@@ -17,16 +17,16 @@ class App extends Component {
         <h2>Uncomment the React component you want to see in source code</h2>
 
         <div className="demo-area">
-          <Toggle>
-            {({ on, toggle }) => (
-              <>
-                <Button onClickHandler={toggle}>Login</Button>
-                <Modal on={on} toggle={toggle}>
-                  <h1>Still in modal</h1>
-                </Modal>
-              </>
-            )}
-          </Toggle>
+          {/*<Toggle>*/}
+            {/*{({ on, toggle }) => (*/}
+              {/*<>*/}
+                {/*<Button onClickHandler={toggle}>Login</Button>*/}
+                {/*<Modal on={on} toggle={toggle}>*/}
+                  {/*<h1>Still in modal</h1>*/}
+                {/*</Modal>*/}
+              {/*</>*/}
+            {/*)}*/}
+          {/*</Toggle>*/}
 
           {/*<Toggle>*/}
             {/*{({ on, toggle }) => (*/}

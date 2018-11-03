@@ -12,6 +12,7 @@ const Card = styled.div`
   padding: 15px;
   ${elevation[4]};
   ${transition({
+    property: 'box-shadow',
     ease: 'ease-in'
   })}
   
