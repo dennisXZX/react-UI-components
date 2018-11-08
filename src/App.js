@@ -9,6 +9,7 @@ import './App.css'
 // import ReduxCounterDemo from './Demos/ReduxCounterDemo/ReduxCounterDemo'
 // import { Toggle } from './Utilities'
 // import { Button, Modal } from './CommonUI'
+import ConditionalComponent from './Demos/ConditionalComponentDemo/ConditionalComponent'
 
 class App extends Component {
   render () {
@@ -17,6 +18,8 @@ class App extends Component {
         <h2>Uncomment the React component you want to see in source code</h2>
 
         <div className="demo-area">
+          <ConditionalComponent />
+
           {/*<Toggle>*/}
             {/*{({ on, toggle }) => (*/}
               {/*<>*/}
